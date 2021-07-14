@@ -33,7 +33,7 @@ menu{
 .container .banner img{
     width: 556.01px;
     height: 438px;
-    margin-right: 160px;
+    /* margin-right: 160px; */
 }
 .text .heading{
     width: 485px;
@@ -209,6 +209,7 @@ footer{
       .container .banner img{
         width: 329px;
         height: 260px;
+
         
       }
       /* .heading {
