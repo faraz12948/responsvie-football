@@ -14,7 +14,7 @@ body{
 menu{
     margin:0px;
     padding: 0px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     
 }
 
@@ -27,6 +27,7 @@ menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
    
 }
 .container .banner img{
@@ -133,3 +134,190 @@ footer{
     padding-left: 6px;
     padding-right: 6px;
 }
+
+/* animation and transitions */
+/* ************************************************** */
+@keyframes color-change {
+    
+    0%  {background-color: rgb(15, 15, 68);}
+    25% {background-color: black;}
+  }
+.container:hover {
+    animation: color-change 5s infinite;
+    
+}
+
+  .heading:hover {
+    color:skyblue;
+    
+  }
+
+
+
+  /* media query */
+
+  @media only screen and (max-width:688px) {
+      .player-info{
+          width: 350px;
+          margin-right: 0px;
+          margin-left: 0px;
+      }
+      .players{
+          grid-template-columns: repeat(1,1fr);
+          place-items: center;
+          width: 350px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        height: 696px;
+        
+      }
+      .text{
+          margin-left: 16px;
+          margin-top: 112px;
+          margin-bottom: 50px;
+          
+      }
+      .text .heading{
+          width: 278px;
+          height: 138px;
+          margin-left: 16px;
+      }
+      .text .heading h1{
+          width: 278px;
+          height: 138px;
+          font-size: 36px;
+          margin-left: 16px;
+      }
+      /* .container .text .heading .btn{
+        margin-left: 16px;
+      } */
+      .btn{
+          margin-left: 25px;
+      }
+      .banner{
+          width: 330px;
+          height: 260px;
+          margin-bottom: 61px;
+          margin-left: 15px;
+          margin-right: 15px;
+      }
+      .container .banner img{
+        width: 329px;
+        height: 260px;
+        
+      }
+      /* .heading {
+        padding-left: 15px;
+        padding-bottom: 50px;
+      } */
+      /* .banner img{
+        padding-bottom: 60px;
+      } */
+      .heading {
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+     .logo{
+         width: 300px;
+     }
+     .logo img{
+         width: 300px;
+         height: 63px;
+     }
+     .copyright-mark{
+         margin-bottom: 187px;
+     }
+  }
+
+  /* tab media query */
+
+  @media only screen and (min-width: 690px) and (max-width: 1024px){
+
+    .player-info{
+        width: 768px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+        justify-content: center;
+        width: 768px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 768px;
+        height: 1000px;
+        
+      }
+      .text{
+        margin-left: 16px;
+        margin-top: 112px;
+        margin-bottom: 50px;
+        
+    }
+    .text .heading{
+        width: 300px;
+        height: 200px;
+        /* margin-left: 16px; */
+    }
+    .text .heading h1{
+        width: 300px;
+        height: 200px;
+        font-size: 40px;
+        margin-left: 16px;
+    }
+    /* .container .text .heading .btn{
+      margin-left: 16px;
+    } */
+    .btn{
+        margin-left: 25px;
+    }
+    .banner{
+        width: 400px;
+        height: 300px;
+        margin-bottom: 61px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .container .banner img{
+      width: 400px;
+      height: 300px;
+      
+    }
+    /* .heading {
+      padding-left: 15px;
+      padding-bottom: 50px;
+    } */
+    /* .banner img{
+      padding-bottom: 60px;
+    } */
+    .heading {
+      font-weight: bold;
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+   .logo{
+       width: 300px;
+   }
+   .logo img{
+       width: 300px;
+       height: 63px;
+   }
+   .copyright-mark{
+       margin-bottom: 187px;
+   }
+}
+
+  }
+
+  
